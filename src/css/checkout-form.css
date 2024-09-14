@@ -1,0 +1,254 @@
+/* Universal CSS */
+html body {
+    font-family: sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: "playwrite";
+    src: url("../assets/fonts/playwrite.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "open-sans";
+    src: url("../assets/fonts/OpenSans-Italic.ttf") format('truetype');
+}
+
+/* Header and nav bar Section */
+header {
+    position: sticky;
+    top: 0;
+}
+
+.header__nav-container {
+    display: flex;
+    background-color: #e8e5d8;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.header__text {
+    font-size: 1.5rem;
+}
+
+.header__heading {
+    font-family: "playwrite";
+    font-style: normal;
+}
+
+.header__nav-bar {
+    margin: 0.5rem;
+}
+
+.header__nav-item {
+    display: inline;
+    margin-left: 2em;
+}
+
+.header__nav-link {
+    color: black;
+    text-decoration: underline;
+    font-family: "playwrite";
+}
+
+/* Main Content Section */
+
+.main__section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 0.3fr);
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.main__header {
+    grid-column: 6 / span 2;
+    justify-self: center;
+}
+
+.main__title {
+    font-family: "open-sans";
+    font-style: normal;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.main__book-section {
+    grid-column: 8 / span 3;
+    grid-row: 2;
+    max-width: 100%;
+    align-self: center;
+    background-color: #e8e5d8;
+}
+
+.main__book-image {
+    width: 100%;
+    height: 540px;
+}
+
+.main__book-heading {
+    font-family: "open-sans";
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 3%;
+    margin: 0%;
+    font-weight: 500;
+}
+
+.main__book-info {
+    font-family: "open-sans";
+    text-align: center;
+    font-weight: 500;
+}
+.main__book-link {
+    text-align: center;
+}
+
+.main__form-section {
+    grid-column: 2 / span 4;
+    margin: 0%;
+    padding: 5%;
+    background-color: #e8e5d8;
+    font-family: "open-sans";
+}
+
+.main__fieldset form__label {
+    font-weight: 500;
+}
+
+/* Button section */
+.form__submit-button {
+    background-color: black;
+    color: white;
+    font-family: "open-sans";
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form__submit-button:hover {
+    background-color: orange;
+    color: seashell;
+}
+
+/* footer section */
+.footer__container {
+    background-color: #e8e5d8;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Media Queries for Tablets (1060px and below)*/
+@media  (max-width: 1060px) { 
+    .header__text {
+        font-size: 1.2rem;
+    }
+    .header__nav-bar {
+        font-size: 1rem;
+    }
+    
+    .main__section {
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(3, 0.3fr);
+    }
+    
+    .main__header {
+        grid-column: 3 / span 4;
+        align-self: stretch;
+        width: 100%;
+    }
+    
+    .main__title {
+        font-size: 3rem;
+    }
+    
+    .main__book-section {
+        grid-column: 3 / span 4;
+        margin: 5%;
+        padding: 2%;
+        grid-row: 2;
+    }
+    
+    .main__book-image {
+        height: auto;
+        width: 65%;
+        padding-left: 15%;
+    }
+    
+    .main__form-section {
+        grid-column: 3 / span 4;
+        margin: 0% 5%;
+    }
+}
+
+/* Media Queries for Mobile (480px and below)*/
+
+@media  (max-width: 480px) { 
+    .header__nav-container {
+        flex-direction: column;
+    }
+
+    .header__text {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .header__heading {
+        margin-right: 2rem;
+    }
+
+    .header__nav-bar {
+        text-align: start;
+        padding: 0;
+        margin-right: 1.5rem;
+    }
+    
+    .header__nav-item {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .main__section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+    }
+    
+    .main__header {
+        grid-column: 1 / span 1;
+    }
+    
+    .main__title {
+        font-size: 2.5rem;
+    }
+    
+    .main__book-section {
+        grid-column: 1 / span 1;
+        margin: 3%;
+        padding: 0;
+    }
+    
+    .main__book-image {
+        height: 380px;
+        padding-left: 17.1%;
+    }
+    
+    .main__form-section {
+        grid-column: 1 / span 1;
+        margin: 3%;
+    }
+    
+    .footer__container {
+        text-align: center;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/checkout-form.css">
+    <title>The Amazing Bookstore</title>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <section class="header__nav-container">
+            <div role="heading" class="header__text">
+                <h1 class="header__heading">The Amazing Bookshop</h1>
+            </div>
+            <nav class="header__nav-bar">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="index.html" class="header__nav-link">Homepage</a></li>
+                </ul>
+            </nav>
+        </section>    
+    </header>     
+    <!-- Main section -->
+    <main>
+        <section class="main__section">
+            <div role="heading" class="main__header">
+                <h1 class="main__title">Cart</h1>
+            </div>
+            <!-- Book Section -->
+            <section class="main__book-section" id="#">
+                <h3 class="main__book-heading">Item picked:</h3>
+                <img src="assets/img/shantaran.jpeg" alt="Picture of the Shantaram book" class="main__book-image">
+                <p class="main__book-info">Other books by this author:</p> 
+                <p class="main__book-link"><a href="https://en.wikipedia.org/wiki/The_Mountain_Shadow" target="_blank">The Mountain Shadows</a></p>          
+            </section>
+            <!--Fill out Section -->
+            <section class="main__form-section" id="#">
+                <fieldset class="main__fieldset">
+                    <legend class="main__legend">Checkout Form</legend>
+                    <!--         Contact Details           -->          
+                    <form id="buyer-information-form">
+                        
+                        <label for="name" class="form__label">Full name:</label>
+                        <br>
+                        <input type="text" placeholder="Ola Nordmann" id="name" class="form__input" required>
+                        <br>
+                        <label for="email" class="form__label">Email:</label>
+                        <br>
+                        <input type="email" id="email" placeholder="ola@example.com" class="form__input" required>
+                        <br>
+                        <label for="phone" class="form__label">Phone number:</label>
+                        <br>
+                        <input type="tel" id="phone" placeholder="12345678" class="form__input" pattern="[0-9]{8}" required>
+                        <br>
+                        <hr>
+    
+                        <!--         Address Details           -->
+    
+                        <label for="address" class="form__label"><u>Address:</u></label>
+                        <br>
+                        <label for="street-address" class="form__label">Street Address:</label>
+                        <input type="text" id="street-address" placeholder="Enter Street Address" class="form__input" required>
+                        <br>
+                        <br>
+                        <!--     Postal Code, City and Country         -->
+                        <label for="postal-code" class="form__label">Postal Code:</label>
+                        <input type="text" id="postal-code" pattern="[0-9]{4}" placeholder="1155" maxlength="4" class="form__input" required>
+                        <br>
+                        <br>
+                        <label for="city" class="form__label">City:</label>
+                        <select id="city" class="form__select" required>
+                            <option value="">Select a City</option>
+                            <option value="">Oslo</option>
+                            <option value="">Bergen</option>
+                            <option value="">Stavanger</option>
+                            <option value="">Trondheim</option>
+                            <option value="">Drammen</option>
+                            <option value="">Fredrikstad</option>
+                            <option value="">Kristiansand</option>
+                            <option value="">Sandnes</option>
+                            <option value="">Tønsberg</option>
+                            <option value="">Moss</option>
+                            <option value="">Bodø</option>
+                            <option value="">Arendal</option>
+                            <option value="">Ålesund</option>
+                            <option value="">Sandefjord</option>
+                            <option value="">Harstad</option>
+                            <option value="">Haugesund</option>
+                            <option value="">Larvik</option>
+                            <option value="">Halden</option>
+                            <option value="">Hamar</option>
+                            <option value="">Gjøvik</option>
+                            <option value="">Molde</option>
+                            <option value="">Lillehammer</option>
+                            <option value="">Mo i Rana</option>
+                            <option value="">Steinkjer</option>
+                            <option value="">Kongsberg</option>
+                            <option value="">Horten</option>
+                            <option value="">Porsgrunn</option>
+                            <option value="">Namsos</option>
+                            <option value="">Ski</option>
+                            <option value="">Askøy</option>
+                            <option value="">Kongsvinger</option>
+                            <option value="">Alta</option>
+                            <option value="">Tromsø</option>
+                            <option value="">Narvik</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="country" class="form__label">Country:</label>
+                        <select id="country" class="form__select" required>
+                            <option value="">Select a Country</option>
+                            <option value="">Norway</option>
+                        </select>
+                        <br>
+                        <hr>
+                        <!--         Quantity counter           -->
+                        <label for="quantity" class="form__label">Quantity:</label>
+                        <input type="number" id="quantity" min="1" class="form__input" required>
+                        <br>
+                        <hr>
+                        <!--         Payment Details           -->
+                        <label for="payment-detail" class="form__label">Payment Method:</label>
+                        <br>
+                        <input type="radio" name="payment-method" id="credit-card" class="form__radio" required>Credit Card
+                        <input type="radio" name="payment-method" id="debit-card" class="form__radio">Debit Card
+                        <input type="radio" name="payment-method" id="paypal" class="form__radio">Paypal
+                        <input type="radio" name="payment-method" id="invoice" class="form__radio">Invoice
+                        <br>
+                        <hr>
+                        <!--         Terms and Conditions           -->
+                        <label for="confirmation" class="form__label">Terms and Conditions:</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" name="confirmation" id="confirmation" class="form__checkbox" required>
+                        <label for="confirmation">I <strong>agree</strong> to the <a href="#">terms and conditions</a></label>
+                        <br>
+                        <br>
+                        <!--         Submit Button           -->
+                        <button class="form__submit-button" type="submit">Buy now!</button>
+                    </form>
+                </fieldset>
+            </section>
+        </section>
+    </main>  
+    <footer>
+        <section class="footer__container">
+            <div class="footer__text">
+                <p>&copy; 2024 The Amazing Bookshop</p>
+            </div>
+        </section>
+    </footer>
+    </body>
+    </html>
+    
