@@ -109,6 +109,15 @@ header {
 }
 .main__book-link {
     text-align: center;
+    text-decoration: underline;
+}
+
+.main__book-link a {
+    color: blue;
+    text-decoration: none;
+}
+.main__book-link a:hover {
+    color: purple;
 }
 
 .main__form-section {
