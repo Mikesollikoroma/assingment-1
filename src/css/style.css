@@ -213,14 +213,18 @@ header {
         flex-direction: column;
         padding: 10px;
         box-sizing: border-box;
+        height: 25vh;
     }
     .header__text {
         text-align: center;
+        font-size: 1.2rem;
+        height: 16vh;
     }
 
     .nav__bar-list {
         margin: 0;
         padding-right: 5%;
+        font-size: 0.8rem;
     }
     .nav__bar-list ul {
         padding-left: 0%;
