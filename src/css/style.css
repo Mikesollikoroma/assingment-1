@@ -139,6 +139,9 @@ header {
 .checkout__button-container button:hover {
     background-color: orange;
 }
+.checkout__button-container button:active {
+    transform: scale(95%);
+}
 /* footer section */
 .footer__container {
     background-color: #e8e5d8;

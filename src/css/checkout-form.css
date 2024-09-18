@@ -150,6 +150,9 @@ header {
     background-color: orange;
     color: seashell;
 }
+.form__submit-button:active {
+    transform: scale(90%);
+}
 
 /* footer section */
 .footer__container {
