@@ -6,7 +6,7 @@ I created a bookshop based on the criteras, with a book described in detail and 
 
 ### Links 
 - **Github repository:** https://github.com/Mikesollikoroma/assingment-1.git
-- **Netlify deployment:** 
+- **Netlify deployment:** https://assingment-1-hoyskolenkristiania.netlify.app
 
 ### Sources
 - **Image:** https://booksmandala.com/_next/image?url=https%3A%2F%2Fbooks.bizmandala.com%2Fmedia%2Fbooks%2F9789173370837%2Fimage.jpeg&w=3840&q=75
